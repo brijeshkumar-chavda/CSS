@@ -9,3 +9,4 @@
 7. Hyper link
 8. List style
 9. Display property
+10. Float
