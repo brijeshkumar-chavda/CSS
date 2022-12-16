@@ -10,3 +10,5 @@
 8. List style
 9. Display property
 10. Float
+11. Column
+12. Position property
