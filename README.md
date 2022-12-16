@@ -12,3 +12,4 @@
 10. Float
 11. Column
 12. Position property
+13. Mini CSS project on position property
