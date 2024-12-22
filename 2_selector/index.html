@@ -6,6 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Selector</title>
     <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* Basic CSS Selector */
+
+      /* Universal/ Global selector (CSS reset) */
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: monospace;
+        box-sizing: border-box;
+      }
+
+      /* Element/ Type selector */
+      body {
+        font-size: 24px;
+        margin: 10px 20px 10px 20px;
+        padding: 1px 2px 3px 4px;
+      }
+
+      /* Grouping selector */
+      h1,
+      h2 {
+        color: red;
+      }
+
+      /* Class selector */
+      .green {
+        color: green;
+      }
+
+      /* ID selector */
+      #blue {
+        color: blue;
+      }
+
+      /* Attribute selector */
+      input[type="text"] {
+        border: red solid;
+      }
+
+      /* Advance CSS Selector */
+
+      /* Descendant Selector */
+      article p {
+        font-style: italic;
+        background-color: #1a1a1a;
+        color: white;
+      }
+
+      /* Child Selector */
+      div > p {
+        background-color: red;
+      }
+
+      /* Adjacent Sibling Selector */
+      div + p {
+        background-color: yellow;
+      }
+
+      /* General Sibling Selector */
+      div ~ p {
+        background-color: blue;
+      }
+
+      /* Pseudo Class Selector */
+      a:hover {
+        background-color: orange;
+      }
+
+      /* Pseudo Element Selector */
+      p::first-letter {
+        font-weight: bold;
+        font-size: 32px;
+      }
+    </style>
   </head>
   <body>
     <h1>CSS Selector</h1>
@@ -39,5 +114,77 @@
       <br />
       error.
     </p>
+
+    <input type="text" placeholder="Enter text here" />
+
+    <article>
+      <p>This paragraph inside the article showing the descendant selector.</p>
+      <p>This paragraph inside the article showing the descendant selector.</p>
+      <div>
+        <p>
+          This paragraph inside the article showing the descendant selector.
+        </p>
+      </div>
+    </article>
+
+    <div>
+      <p>I am child</p>
+      <p>I am child</p>
+      <section>
+        <p>I am descendant</p>
+      </section>
+      <p>I am child</p>
+    </div>
+
+    <!-- Adjacent Sibling Selector -->
+    <h2>Adjacent Sibling Selector</h2>
+
+    <p>
+      The + selector is used to select an element that is directly after another
+      specific element.
+    </p>
+    <p>
+      The following example selects the first p element that are placed
+      immediately after div elements:
+    </p>
+
+    <div>
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+    </div>
+
+    <p>Paragraph 3. After a div.</p>
+    <p>Paragraph 4. After a div.</p>
+
+    <div>
+      <p>Paragraph 5 in the div.</p>
+      <p>Paragraph 6 in the div.</p>
+    </div>
+
+    <p>Paragraph 7. After a div.</p>
+    <p>Paragraph 8. After a div.</p>
+
+    <!-- General Sibling Selector -->
+    <h2>General Sibling Selector</h2>
+
+    <p>
+      The general sibling selector (~) selects all elements that are next
+      siblings of a specified element.
+    </p>
+
+    <div>
+      <p>Paragraph 1</p>
+    </div>
+
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+
+    <!-- Pseudo Class Selector -->
+    <a href="www.google.com">Google</a>
+
+    <!-- Pseudo Element Selector -->
+    <p>Hello, World!</p>
+    <p>Hi, World!</p>
+    <p>Hey, World!</p>
   </body>
 </html>
