@@ -1,18 +1,3 @@
-/* 
-    content-box
-    - It will take space according to content.
-    - h1 -> Hello, World! -> width -> 500px 
-    - Hello, World! size is 500px
-    
-    border-box
-    - It will take space according to content + padding + border.
-    - h1 -> Hello, World! -> width -> 500px
-    - Hello, World! -> 400px
-    - padding -> 50px
-    - border -> 50px
-    - total -> 500px 
-*/
-
 * {
   margin: 0;
   padding: 0;
