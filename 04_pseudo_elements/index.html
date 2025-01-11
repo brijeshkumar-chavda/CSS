@@ -70,6 +70,74 @@
       .nav1 a:hover::after {
         transform: scaleX(1);
       }
+
+      .nav2 {
+        /* border: red 2px solid; */
+        background-color: green;
+        width: 200px;
+        padding: 20px;
+      }
+      .nav2 ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav2 li {
+        margin-bottom: 10px;
+      }
+
+      .nav2 a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 10px;
+        width: 100px;
+      }
+
+      .nav2 a:hover {
+        background-color: rgb(1, 84, 1);
+      }
+
+      .nav2 .login-btn {
+        background-color: rgb(1, 84, 1);
+        color: white;
+        border: none;
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .nav3 {
+        background-color: grey;
+        /* padding: 10px; */
+      }
+
+      .nav3 ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+      }
+
+      .nav3 a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 10px;
+      }
+
+      .nav3 .dropdown-content {
+        display: none;
+      }
+
+      .nav3 .dropdown:hover .dropdown-content {
+        display: block;
+        position: absolute;
+        background-color: grey;
+      }
     </style>
   </head>
   <body>
@@ -102,7 +170,14 @@
       <nav class="nav3">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li class="dropdown">
+            <a href="#">About</a>
+            <div class="dropdown-content">
+              <a href="#">Our Story</a>
+              <a href="#">Team</a>
+              <a href="#">Contact</a>
+            </div>
+          </li>
           <li><a href="#">Products</a></li>
           <li><button class="login-btn">Login</button></li>
         </ul>
