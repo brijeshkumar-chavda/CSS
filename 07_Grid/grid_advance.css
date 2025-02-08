@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  padding: 24px;
+  line-height: 1.6;
+}
+
+.container {
+  background-color: #343030;
+  border: 2px solid #fff;
+  padding: 12px;
+  margin-bottom: 24px;
+}
+
+.grid-container {
+  display: grid;
+  background-color: #b7a6a6;
+  gap: 12px;
+  padding: 12px;
+}
+
+.item {
+  font-size: 18px;
+  text-align: center;
+  background-color: rgb(87, 87, 229);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item:nth-child(even) {
+  background-color: rgb(235, 70, 70);
+}
