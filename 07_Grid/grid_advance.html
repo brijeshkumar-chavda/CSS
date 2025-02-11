@@ -114,6 +114,36 @@
           <div class="item">6</div>
         </div>
       </div>
+
+      <div class="container">
+        <h2>Alignment and justification</h2>
+        <div
+          class="grid-container"
+          style="
+            grid-template-columns: repeat(3, 100px);
+            height: 200px;
+            align-items: center;
+            justify-content: space-around;
+          "
+        >
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Nested Grids</h2>
+        <div class="grid-container" style="grid-template-columns: 1fr 1fr">
+          <div class="item">1</div>
+          <div class="grid-container" style="grid-template-columns: 1fr 1fr">
+            <div class="item" style="background-color: green">2.1</div>
+            <div class="item" style="background-color: green">2.2</div>
+            <div class="item" style="background-color: green">2.3</div>
+            <div class="item" style="background-color: green">2.4</div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

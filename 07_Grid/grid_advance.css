@@ -23,7 +23,6 @@ body {
   background-color: #b7a6a6;
   gap: 12px;
   padding: 12px;
-  grid-template-rows: repeat(3, 100px);
 }
 
 .item {
