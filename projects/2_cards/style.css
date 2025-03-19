@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
+.screen {
+  background-color: #ededed;
+  border-radius: 24px;
+  height: 100vh; /* Let the content determine the height */
+  width: 400px;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.logo {
+  height: 64px;
+  width: 64px;
+}
+
+.wishlist-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 48px;
+  color: #263238;
+}
+
+img {
+  padding: 24px;
+}
+
+.color-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.color-button {
+  width: 48px;
+  height: 48px;
+  margin: 12px;
+  border-radius: 50%;
+  border: transparent;
+  cursor: pointer;
+}
+
+#orange-button {
+  background-color: #eb7939;
+}
+#black-button {
+  background-color: #000;
+}
+#white-button {
+  background-color: #d8d8d8;
+}
+#grey-button {
+  background-color: #85909d;
+}
+
+.color-button:focus {
+}
+
+.size-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.size-button {
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
+  margin: 12px;
+  border: transparent;
+  border-radius: 12px;
+  background-color: #e4e6e7;
+}
+
+.size-button:focus {
+  background-color: #000;
+  color: #fff;
+}
