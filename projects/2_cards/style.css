@@ -15,10 +15,12 @@ body {
 .screen {
   background-color: #ededed;
   border-radius: 24px;
-  height: 100vh; /* Let the content determine the height */
+  height: auto;
   width: 400px;
   display: flex;
   flex-direction: column; /* Stack children vertically */
+  position: relative;
+  padding: 24px;
 }
 
 .top-bar {
@@ -45,9 +47,14 @@ img {
   padding: 24px;
 }
 
+h1 {
+  margin-bottom: 12px;
+}
+
 .color-container {
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 12px;
 }
 
 .color-button {
@@ -78,6 +85,7 @@ img {
 .size-container {
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 12px;
 }
 
 .size-button {
@@ -93,4 +101,17 @@ img {
 .size-button:focus {
   background-color: #000;
   color: #fff;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-button {
+  color: #fff;
+  background-color: #000;
+  padding: 12px 24px;
+  border-radius: 24px;
 }
