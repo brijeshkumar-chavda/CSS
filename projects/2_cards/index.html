@@ -9,6 +9,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="screen">
@@ -41,26 +47,32 @@
 
       <h3>Color</h3>
       <div class="color-container">
-        <button class="color-button" id="orange-button">
-          <div class="checkmark-icon-container">
-            <i class="fa-solid fa-check"></i>
-          </div>
-        </button>
-        <button class="color-button" id="black-button">
-          <div class="checkmark-icon-container">
-            <i class="fa-solid fa-check"></i>
-          </div>
-        </button>
-        <button class="color-button" id="white-button">
-          <div class="checkmark-icon-container">
-            <i class="fa-solid fa-check"></i>
-          </div>
-        </button>
-        <button class="color-button" id="grey-button">
-          <div class="checkmark-icon-container">
-            <i class="fa-solid fa-check"></i>
-          </div>
-        </button>
+        <input
+          type="radio"
+          name="color-button"
+          value="orange"
+          id="orange-button"
+        />
+        <label id="orange-button" for="orange-button"></label>
+
+        <input
+          type="radio"
+          name="color-button"
+          value="black"
+          id="black-button"
+        />
+        <label id="black-button" for="black-button"></label>
+
+        <input
+          type="radio"
+          name="color-button"
+          value="white"
+          id="white-button"
+        />
+        <label id="white-button" for="white-button"></label>
+
+        <input type="radio" name="color-button" value="gray" id="gray-button" />
+        <label id="gray-button" for="gray-button"></label>
       </div>
 
       <h3>Size</h3>

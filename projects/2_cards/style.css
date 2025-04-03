@@ -9,7 +9,8 @@ body {
   background-color: #1f1f1f;
   display: flex;
   justify-content: center;
-  min-height: 100vh; /* Ensure body takes full viewport height */
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
 .screen {
@@ -53,33 +54,38 @@ h1 {
 
 .color-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   margin-bottom: 12px;
+  padding-top: 12px;
 }
 
-.color-button {
-  width: 48px;
-  height: 48px;
-  margin: 12px;
+input {
+  display: none;
+}
+
+label {
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
-  border: transparent;
   cursor: pointer;
 }
 
 #orange-button {
-  background-color: #eb7939;
+  background-color: orange;
 }
 #black-button {
-  background-color: #000;
+  background-color: black;
 }
 #white-button {
-  background-color: #d8d8d8;
+  background-color: white;
 }
-#grey-button {
-  background-color: #85909d;
+#gray-button {
+  background-color: #515151;
 }
 
-.color-button:focus {
+input:checked + label {
+  box-shadow: 0 0 4px #06cf9c;
+  border: 2px solid #06cf9c;
 }
 
 .size-container {
